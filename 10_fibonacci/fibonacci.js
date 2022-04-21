@@ -1,4 +1,6 @@
-const fibonacci = function() {
+const fibonacci = function(index) {
+    if (index < 2) return index;
+    return fibonacci(index-1) + fibonacci(index-2);
 
 };
 
